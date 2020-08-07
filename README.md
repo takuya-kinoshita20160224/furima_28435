@@ -2,12 +2,6 @@
 
 ## users テーブル
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-Things you may want to cover:
-=======
-=======
->>>>>>> 3e98bfd5b34d020ce1e1c152912c585a88317bdb
 | Column               | Type   | Options     |
 | -------------------- | ------ | ----------- |
 | nickname             | string | null: false |
@@ -18,25 +12,14 @@ Things you may want to cover:
 | family_name_phonetic | string | null: false |
 | last_name_phonetic   | string | null: false |
 | birthday             | date   | null: false |
-<<<<<<< HEAD
 
 ### Association
->>>>>>> Stashed changes
-=======
-### Association
->>>>>>> 3e98bfd5b34d020ce1e1c152912c585a88317bdb
 
 - has_many :items
 - has_many :buys
 
 ## items テーブル
 
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-* Configuration
-=======
-=======
->>>>>>> 3e98bfd5b34d020ce1e1c152912c585a88317bdb
 | Column        | Type       | Options                        |
 | ------------- | ---------- | ------------------------------ |
 | image         | string     | null: false                    |
@@ -49,13 +32,8 @@ Things you may want to cover:
 | shipping_area | integer    | null: false                    |
 | shipping_date | integer    | null: false                    |
 | user          | references | null: false, foreign_key: true |
-<<<<<<< HEAD
 
 ### Association
->>>>>>> Stashed changes
-=======
-### Association
->>>>>>> 3e98bfd5b34d020ce1e1c152912c585a88317bdb
 
 - belongs_to :user
 - has_one : buy
