@@ -23,9 +23,14 @@
 | ------------- | ---------- | ------------------------------ |
 | image         | string     | null: false                    |
 | name          | string     | null: false                    |
-| text          | string     | null: false                    |
+| text          | text       | null: false                    |
 | price         | integer    | null: false                    |
 | user          | references | null: false, foreign_key: true |
+| category      | integer    | null: false                    |
+| status        | integer    | null: false                    |
+| delivery_fee  | integer    | null: false                    |
+| shipping_area | integer    | null: false                    |
+| shipping_date | integer    | null: false                    |
 ### Association
 
 - belongs_to :user
