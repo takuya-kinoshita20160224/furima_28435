@@ -25,12 +25,12 @@
 | name          | string     | null: false                    |
 | text          | text       | null: false                    |
 | price         | integer    | null: false                    |
-| user          | references | null: false, foreign_key: true |
 | category      | integer    | null: false                    |
 | status        | integer    | null: false                    |
 | delivery_fee  | integer    | null: false                    |
 | shipping_area | integer    | null: false                    |
 | shipping_date | integer    | null: false                    |
+| user          | references | null: false, foreign_key: true |
 ### Association
 
 - belongs_to :user
@@ -52,6 +52,7 @@
 | Column        | Type       | Options                        |
 | ------------- | ---------- | ------------------------------ |
 | post_code     | string     | null: false                    |
+| prefecture    | integer    | null: false                    |
 | city          | string     | null: false                    |
 | house_name    | string     |                                |
 | building_name | string     |                                |
