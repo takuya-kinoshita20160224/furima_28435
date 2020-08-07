@@ -11,9 +11,7 @@
 | last_name            | string | null: false |
 | family_name_phonetic | string | null: false |
 | last_name_phonetic   | string | null: false |
-| birth_year           | string | null: false |
-| birth_month          | string | null: false |
-| birth_day            | string | null: false |
+| birthday             | date   | null: false |
 ### Association
 
 - has_many :items
@@ -27,11 +25,6 @@
 | name          | string     | null: false                    |
 | text          | string     | null: false                    |
 | price         | integer    | null: false                    |
-| category      | string     | null: false                    |
-| status        | string     | null: false                    |
-| delivery_fee  | string     | null: false                    |
-| shipping_area | string     | null: false                    |
-| shipping_date | string     | null: false                    |
 | user          | references | null: false, foreign_key: true |
 ### Association
 
