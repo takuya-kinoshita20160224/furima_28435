@@ -1,6 +1,6 @@
 class ItemsController < ApplicationController
   before_action :move_to_index, only: :new
-  before_action :set_item, only: [:edit, :show]
+  before_action :set_item, only: [:edit, :show, :update]
 
   def index
     @items = Item.includes(:user).order('created_at DESC')
@@ -22,7 +22,6 @@ class ItemsController < ApplicationController
   end
 
   def update
-    @item = Item.find(params[:id])
     if @item.update(item_params)
       redirect_to item_path
     else
