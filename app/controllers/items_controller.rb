@@ -18,18 +18,12 @@ class ItemsController < ApplicationController
     end
   end
 
-  def edit
-  end
-
   def update
     if @item.update(item_params)
       redirect_to item_path
     else
       render "edit"
     end
-  end
-
-  def show
   end
 
   private
