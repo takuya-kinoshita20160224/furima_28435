@@ -8,6 +8,7 @@ class UserInfomation
     validates :city
     validates :house_name
     validates :phone_number, length: { maximum: 11 }
+    validates :token
   end
 
   def save
