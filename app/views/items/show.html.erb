@@ -7,7 +7,7 @@
       <%= @item.name %>
     </h2>
     <div class='item-img-content'>
-      <%= image_tag @item.image ,class:"item-box-img" %>
+      <%= image_tag @item.image ,class:"item-box-img" if @item.image.attached? %>
     <% if @item.buy %>
       <div class='sold-out'>
         <span>Sold Out!!</span>
@@ -27,8 +27,7 @@
       <%= link_to '商品の編集', edit_item_path(@item.id), method: :get, class: "item-red-btn" %>
       <p class='or-text'>or</p>
       <%= link_to '削除', item_path(@item.id), method: :delete, class:'item-destroy' %>
-    <% end %>
-    <% if current_user.id != @item.user_id %>
+    <% else %>
       <%= link_to '購入画面に進む', item_buys_path(@item.id) ,class:"item-red-btn" unless @item.buy %>
     <% end %>
 
