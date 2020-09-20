@@ -8,7 +8,7 @@ worker_processes 1
 working_directory app_path
 
 #ポート番号を指定  追加でsharedを参照するよう変更
-listen 3000
+listen "#{app_path}/tmp/sockets/unicorn.sock"
 
 #Unicornの起動に必要なファイルの設置場所を指定  追加でsharedを参照するよう変更
 pid "#{app_path}/tmp/pids/unicorn.pid"
